@@ -1455,6 +1455,22 @@ export const cmTelecomConfig: IConfigCredential[] = [
   ...smsConfigBase,
 ];
 
+export const valuefirstConfig: IConfigCredential[] = [
+  {
+    key: CredentialsKeyEnum.User,
+    displayName: 'Username',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.Password,
+    displayName: 'Password',
+    type: 'string',
+    required: true,
+  },
+  ...smsConfigBase,
+];
+
 export const telegramConfig: IConfigCredential[] = [
   {
     key: CredentialsKeyEnum.ApiToken,
